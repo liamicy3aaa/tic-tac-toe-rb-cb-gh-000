@@ -113,7 +113,8 @@ def current_player(board)
     return "X"
   elsif number.odd?
     return "O"
-  end
+  else
+    return "X"
 end
 
 def won?(board)
