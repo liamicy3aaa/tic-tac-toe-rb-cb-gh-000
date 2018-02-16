@@ -60,3 +60,25 @@ end
 def move(board, position, character = "X")
   board[position] = character
 end
+
+def valid_move?(board, index)
+  if index.between?(0, 8)
+    if !position_taken?(board, index)
+      return true
+    else 
+      return false
+    end
+  else
+    return false
+  end
+end
+
+
+def position_taken?(board, index)
+  bitem = board[index]
+  if bitem == "" || bitem == " " || bitem == nil
+    return false
+  else
+    return true
+  end
+end
