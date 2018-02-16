@@ -45,3 +45,5 @@ elsif count == 9
 end
 end
 
+def display_board(board)
+  puts " "
