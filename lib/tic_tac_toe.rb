@@ -57,7 +57,7 @@ def input_to_index(input)
   return input.to_i - 1
 end
 
-def move(board, position, character = "X")
+def move(board, position, character)
   if valid_move?(board, position)
     board[position] = character
   else
