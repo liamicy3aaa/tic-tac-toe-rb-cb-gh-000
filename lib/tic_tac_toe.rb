@@ -189,3 +189,17 @@ def winner(board)
   return winner
 end
 end
+
+def play(board)
+  until over?(board) == true
+    turn(board)
+  end
+  
+  if won?(board)
+    puts "Well done you won #{winner(board)}!"
+  elseif draw?(board)
+    puts "The game was a draw. No one won!"
+  end
+  puts "end of game"
+end
+    
